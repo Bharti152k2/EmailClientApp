@@ -1,9 +1,43 @@
-.main-list-page {
-  border: "2px solid red";
+main {
+  background-color: #f4f5f9;
+  padding: 30px;
 }
 .filter-section {
-  color: "2px solid red";
+  display: flex;
 }
-.emails-list {
-  color: "2px solid red";
+.filter-section ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 20px;
+  width: 18%;
+}
+.filter-section ul li {
+  border: 2px solid #cfd2dc;
+  padding: 3px 12px;
+  border-radius: 20px;
+}
+main .emails-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* border: 2px solid #cfd2dc; */
+  margin: 20px 0px;
+}
+.email {
+  display: flex;
+  border: 2px solid #cfd2dc;
+  padding: 10px;
+  background-color: white;
+  border-radius: 8px; 
+}
+.email span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e54065;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
 }
