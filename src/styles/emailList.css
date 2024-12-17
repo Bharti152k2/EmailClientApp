@@ -1,43 +1,121 @@
 main {
+  display: flex;
+  flex-direction: column;
   background-color: #f4f5f9;
   padding: 30px;
+  width: 100%;
+  height: 100vh;
+  color: #636363;
 }
+
 .filter-section {
   display: flex;
+}
+.filter-section p {
+  font-size: 20px;
 }
 .filter-section ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-left: 20px;
-  width: 18%;
+  width: 20%;
 }
 .filter-section ul li {
-  border: 2px solid #cfd2dc;
-  padding: 3px 12px;
+  padding: 0px 12px;
   border-radius: 20px;
 }
-main .emails-list {
+.active {
+  border: 2px solid #cfd2dc;
+  background-color: #e1e4ea;
+}
+li button {
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+}
+
+.emails-list {
   display: flex;
   flex-direction: column;
   gap: 10px;
   /* border: 2px solid #cfd2dc; */
   margin: 20px 0px;
+  transition: width 0.3s;
 }
 .email {
   display: flex;
   border: 2px solid #cfd2dc;
   padding: 10px;
   background-color: white;
-  border-radius: 8px; 
+  border-radius: 8px;
 }
-.email span {
+.email div {
+  width: 80%;
+}
+.email div :nth-child(3) {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.logo {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #e54065;
+  color: white;
   border-radius: 100%;
   width: 40px;
   height: 40px;
   margin-right: 20px;
+}
+
+#fav-tag {
+  color: #e54065;
+  margin-left: 10px;
+}
+.email-body {
+  width: 65%;
+  height: 37%;
+  margin: 20px 0px 20px 20px;
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #cfd2dc;
+  background-color: white;
+  /* overflow-y: auto; */
+}
+.email-body > p {
+  margin-left: 7%;
+}
+.header {
+  display: flex;
+}
+.header p {
+  font-size: 18px;
+}
+#fav-mark {
+  border: none;
+  outline: none;
+  color: white;
+  padding: 5px 15px;
+  height: 10%;
+  border-radius: 20px;
+  margin-left: 65%;
+}
+.button-default {
+  background-color: #e54065;
+  cursor: pointer;
+}
+
+.button-disabled {
+  background-color: #cfd2dc;
+  cursor: not-allowed;
+}
+.content {
+  margin-top: 20px;
+  text-align: justify;
+}
+.bottom-section {
+  display: flex;
 }
