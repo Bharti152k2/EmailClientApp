@@ -1,4 +1,3 @@
-import EmailDetail from "./components/EmailDetail";
 import EmailList from "./components/EmailList";
 import {
   BrowserRouter as Router,
@@ -13,7 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Navigate to="/List-of-emails" />} />
           <Route path="List-of-emails" element={<EmailList />} />
-          <Route path="/email/:id" element={<EmailList />} />
+          {/* <Route path="/email/:id" element={<EmailList />} /> */}
         </Routes>
       </Router>
     </>
